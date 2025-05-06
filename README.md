@@ -76,11 +76,12 @@ Em seguida, adicione o arquivo gerado `index.html` no seu fork.
 
 Por fim, responda as questões abaixo no seu `fork`: 
 
-1. Repositório selecionado: <URL_DO_REPOSITORIO_SELECIONADO_AQUI>
+1. Repositório selecionado: https://github.com/carbon-app/carbon
 
-2. Gráfico selecionado: <NOME_DO_GRAFICO_SELECIONADO_AQUI>
+2. Gráfico selecionado: Await expression
   
-3. Explicação: <EXPLICACAO_AQUI>
+3. Explicação: Houve um grande salto no uso de expressões await de 2021 para 2022, passando de 13 para 23 ocorrências no código do repositório. Esse crescimento indica uma tendência clara de refatoração, em que melhora legibilidade do código, substituindo padrões antigos baseados em .then() ou callbacks aninhados. Await esta sendo empregado em diversas partes do projeto, como conversão de arquivos, chamadas a APIs, carregamento de fontes e inicialização de navegadores headless.
+Além disso, o fato de haver await dentro de chamadas de import dinâmico (import('prettier/standalone')) sugere que os desenvolvedores também estão aproveitando recursos modernos do JavaScript para otimizar o carregamento de dependências, sendo um bom sinal de boas práticas.
 
 
 

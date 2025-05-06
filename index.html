@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitEvo - carbon</title>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+</head>
+<body>
+	
+  <div style="width: 100%; max-width: 650px; margin: 0 auto; text-align: center; background: #FFFFF">
+	  <p><a href="https://github.com/andrehora/gitevo">GitEvo</a>, created at 2025-05-05 20:50:59 -0300</p>
+	  <hr>
+	  <h1 href="#1" style="font-size: 50px;">carbon</h1>
+   	<div id="chart-wrapper"></div>
+	  <hr>
+	  <p><a href="https://github.com/andrehora/gitevo">GitEvo</a>, created at 2025-05-05 20:50:59 -0300</p>
+  </div>
+
+  <script id="jsonData" type="application/json">
+    [
+   {
+      "title": "Lines of code (LOC)",
+      "type": "line",
+      "indexAxis": "x",
+      "display_legend": false,
+      "labels": [
+         "2020",
+         "2021",
+         "2022",
+         "2023",
+         "2024"
+      ],
+      "datasets": [
+         {
+            "data": [
+               10911,
+               12237,
+               12756,
+               13293,
+               13283
+            ]
+         }
+      ]
+   },
+   {
+      "title": "JavaScript files",
+      "type": "line",
+      "indexAxis": "x",
+      "display_legend": false,
+      "labels": [
+         "2020",
+         "2021",
+         "2022",
+         "2023",
+         "2024"
+      ],
+      "datasets": [
+         {
+            "data": [
+               92,
+               95,
+               100,
+               99,
+               99
+            ]
+         }
+      ]
+   },
+   {
+      "title": "LOC / JavaScript files",
+      "type": "line",
+      "indexAxis": "x",
+      "display_legend": false,
+      "labels": [
+         "2020",
+         "2021",
+         "2022",
+         "2023",
+         "2024"
+      ],
+      "datasets": [
+         {
+            "data": [
+               118.6,
+               128.8,
+               127.6,
+               134.3,
+               134.2
+            ]
+         }
+      ]
+   },
+   {
+      "title": "Classes - 2024",
+      "indexAxis": "x",
+      "type": "bar",
+      "display_legend": false,
+      "labels": [
+         "class_declaration"
+      ],
+      "datasets": [
+         {
+            "data": [
+               17
+            ],
+            "backgroundColor": [
+               "#36A2EB",
+               "#FF6384",
+               "#FF9F40",
+               "#FFCE56",
+               "#4BC0C0",
+               "#9966FF",
+               "#C9CBCF"
+            ]
+         }
+      ]
+   },
+   {
+      "title": "Classes",
+      "type": "line",
+      "indexAxis": "x",
+      "display_legend": false,
+      "labels": [
+         "2020",
+         "2021",
+         "2022",
+         "2023",
+         "2024"
+      ],
+      "datasets": [
+         {
+            "data": [
+               18,
+               16,
+               16,
+               17,
+               17
+            ]
+         }
+      ]
+   },
+   {
+      "title": "Variable declarations - 2024",
+      "indexAxis": "x",
+      "type": "bar",
+      "display_legend": false,
+      "labels": [
+         "const",
+         "let",
+         "var"
+      ],
+      "datasets": [
+         {
+            "data": [
+               382,
+               95,
+               92
+            ],
+            "backgroundColor": [
+               "#36A2EB",
+               "#FF6384",
+               "#FF9F40",
+               "#FFCE56",
+               "#4BC0C0",
+               "#9966FF",
+               "#C9CBCF"
+            ]
+         }
+      ]
+   },
+   {
+      "title": "Variable declarations",
+      "type": "line",
+      "indexAxis": "x",
+      "display_legend": true,
+      "labels": [
+         "2020",
+         "2021",
+         "2022",
+         "2023",
+         "2024"
+      ],
+      "datasets": [
+         {
+            "label": "const",
+            "data": [
+               351,
+               378,
+               393,
+               382,
+               382
+            ]
+         },
+         {
+            "label": "let",
+            "data": [
+               11,
+               12,
+               59,
+               95,
+               95
+            ]
+         },
+         {
+            "label": "var",
+            "data": [
+               38,
+               92,
+               92,
+               92,
+               92
+            ]
+         }
+      ]
+   },
+   {
+      "title": "Functions - 2024",
+      "indexAxis": "x",
+      "type": "bar",
+      "display_legend": false,
+      "labels": [
+         "arrow_function",
+         "function_declaration",
+         "function_expression",
+         "method_definition"
+      ],
+      "datasets": [
+         {
+            "data": [
+               417,
+               209,
+               88,
+               33
+            ],
+            "backgroundColor": [
+               "#36A2EB",
+               "#FF6384",
+               "#FF9F40",
+               "#FFCE56",
+               "#4BC0C0",
+               "#9966FF",
+               "#C9CBCF"
+            ]
+         }
+      ]
+   },
+   {
+      "title": "Functions",
+      "type": "line",
+      "indexAxis": "x",
+      "display_legend": true,
+      "labels": [
+         "2020",
+         "2021",
+         "2022",
+         "2023",
+         "2024"
+      ],
+      "datasets": [
+         {
+            "label": "arrow_function",
+            "data": [
+               378,
+               405,
+               425,
+               417,
+               417
+            ]
+         },
+         {
+            "label": "function_declaration",
+            "data": [
+               85,
+               184,
+               193,
+               209,
+               209
+            ]
+         },
+         {
+            "label": "function_expression",
+            "data": [
+               16,
+               75,
+               79,
+               88,
+               88
+            ]
+         },
+         {
+            "label": "method_definition",
+            "data": [
+               52,
+               32,
+               33,
+               33,
+               33
+            ]
+         }
+      ]
+   },
+   {
+      "title": "Conditionals - 2024",
+      "indexAxis": "x",
+      "type": "bar",
+      "display_legend": false,
+      "labels": [
+         "if_statement",
+         "ternary_expression",
+         "switch_statement"
+      ],
+      "datasets": [
+         {
+            "data": [
+               369,
+               154,
+               5
+            ],
+            "backgroundColor": [
+               "#36A2EB",
+               "#FF6384",
+               "#FF9F40",
+               "#FFCE56",
+               "#4BC0C0",
+               "#9966FF",
+               "#C9CBCF"
+            ]
+         }
+      ]
+   },
+   {
+      "title": "Conditionals",
+      "type": "line",
+      "indexAxis": "x",
+      "display_legend": true,
+      "labels": [
+         "2020",
+         "2021",
+         "2022",
+         "2023",
+         "2024"
+      ],
+      "datasets": [
+         {
+            "label": "if_statement",
+            "data": [
+               219,
+               257,
+               294,
+               369,
+               369
+            ]
+         },
+         {
+            "label": "ternary_expression",
+            "data": [
+               116,
+               130,
+               151,
+               154,
+               154
+            ]
+         },
+         {
+            "label": "switch_statement",
+            "data": [
+               4,
+               5,
+               5,
+               5,
+               5
+            ]
+         }
+      ]
+   },
+   {
+      "title": "Loops - 2024",
+      "indexAxis": "x",
+      "type": "bar",
+      "display_legend": false,
+      "labels": [
+         "for_statement",
+         "while_statement"
+      ],
+      "datasets": [
+         {
+            "data": [
+               16,
+               10
+            ],
+            "backgroundColor": [
+               "#36A2EB",
+               "#FF6384",
+               "#FF9F40",
+               "#FFCE56",
+               "#4BC0C0",
+               "#9966FF",
+               "#C9CBCF"
+            ]
+         }
+      ]
+   },
+   {
+      "title": "Loops",
+      "type": "line",
+      "indexAxis": "x",
+      "display_legend": true,
+      "labels": [
+         "2020",
+         "2021",
+         "2022",
+         "2023",
+         "2024"
+      ],
+      "datasets": [
+         {
+            "label": "for_statement",
+            "data": [
+               5,
+               7,
+               16,
+               16,
+               16
+            ]
+         },
+         {
+            "label": "while_statement",
+            "data": [
+               5,
+               7,
+               6,
+               10,
+               10
+            ]
+         }
+      ]
+   },
+   {
+      "title": "Exception statements - 2024",
+      "indexAxis": "x",
+      "type": "bar",
+      "display_legend": false,
+      "labels": [
+         "try_statement",
+         "throw_statement"
+      ],
+      "datasets": [
+         {
+            "data": [
+               13,
+               4
+            ],
+            "backgroundColor": [
+               "#36A2EB",
+               "#FF6384",
+               "#FF9F40",
+               "#FFCE56",
+               "#4BC0C0",
+               "#9966FF",
+               "#C9CBCF"
+            ]
+         }
+      ]
+   },
+   {
+      "title": "Exception statements",
+      "type": "line",
+      "indexAxis": "x",
+      "display_legend": true,
+      "labels": [
+         "2020",
+         "2021",
+         "2022",
+         "2023",
+         "2024"
+      ],
+      "datasets": [
+         {
+            "label": "try_statement",
+            "data": [
+               7,
+               7,
+               13,
+               13,
+               13
+            ]
+         },
+         {
+            "label": "throw_statement",
+            "data": [
+               5,
+               5,
+               4,
+               4,
+               4
+            ]
+         }
+      ]
+   },
+   {
+      "title": "Await expression",
+      "type": "line",
+      "indexAxis": "x",
+      "display_legend": false,
+      "labels": [
+         "2020",
+         "2021",
+         "2022",
+         "2023",
+         "2024"
+      ],
+      "datasets": [
+         {
+            "data": [
+               14,
+               13,
+               23,
+               22,
+               22
+            ]
+         }
+      ]
+   },
+   {
+      "title": "Comments",
+      "type": "line",
+      "indexAxis": "x",
+      "display_legend": false,
+      "labels": [
+         "2020",
+         "2021",
+         "2022",
+         "2023",
+         "2024"
+      ],
+      "datasets": [
+         {
+            "data": [
+               305,
+               279,
+               293,
+               318,
+               318
+            ]
+         }
+      ]
+   }
+]
+  </script>
+
+  <script>		
+      try {
+
+        const jsonDataElement = document.getElementById('jsonData');
+        const jsonData = JSON.parse(jsonDataElement.textContent);
+        const chartWrapper = document.getElementById('chart-wrapper');
+
+        // Generate charts
+        jsonData.forEach((chartData, index) => {
+        
+        const hr = document.createElement('hr');
+        const br = document.createElement('br');
+        
+        const chartId = chartData.title.toLowerCase().replace(/\s+/g, '-');
+        const section = document.createElement('div');
+        const link = document.createElement('a');
+        section.id = chartId
+        link.href = `#${chartId}`;
+        link.textContent = '🔗';
+        link.style = 'all: unset; cursor: pointer;'
+
+        chartWrapper.appendChild(hr);
+        chartWrapper.appendChild(br);
+        chartWrapper.appendChild(link);
+        chartWrapper.appendChild(section);
+		  
+          // Create chart canvas
+          const canvas = document.createElement('canvas');
+          canvas.id = `chart-${index}`;
+          chartWrapper.appendChild(canvas);
+		  
+          // Create the chart
+          // Chart.register(ChartDataLabels);
+          new Chart(canvas, {
+            type: chartData.type,
+            data: {
+              labels: chartData.labels,
+              datasets: chartData.datasets,
+            },
+            options: {
+              indexAxis: chartData.indexAxis,
+              responsive: true,
+              scales: {
+                y: {
+                  beginAtZero: true
+                }
+              },
+              plugins: {
+                  colors: {
+                    enabled: true,
+                  },
+                  legend: {
+                    display: chartData.display_legend,
+                  },
+                  tooltip: {
+                    enabled: true,
+                    animation: false
+                  },
+                  title: {
+                    display: true,
+                    text: chartData.title,
+                    font: {
+                      size: 20
+                    }
+                  },
+                  subtitle: {
+                    display: true,
+                    text: chartData.subtitle,
+                  }
+              }
+            }
+          });
+        });
+      } catch (error) {
+        console.error('Error loading JSON data:', error);
+      }
+  </script>
+</body>
+</html>
